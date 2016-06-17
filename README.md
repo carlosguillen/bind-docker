@@ -12,6 +12,5 @@ $ sudo docker-compose up
 ```
 
 https://github.com/sameersbn/docker-bind/blob/master/README.md
-This is basically sameershbn's image. I just added somce fake zone data for noobs like mua :p
-
-
+This is basically sameershbn's image. 
+I just added some fake zone data for noobs like mua :stuck_out_tongue:
