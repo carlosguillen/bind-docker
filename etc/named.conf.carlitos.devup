@@ -1,0 +1,32 @@
+acl "carlitos.devup" {
+    192.168.1.0/24; //local stuff
+    10.0.0/24; //nomadix
+    127.0.0.0/28; // loopback
+    172.17.0.0/16; //docker
+};
+
+options {
+    forwarders {
+        8.8.8.8;
+        8.8.4.4;
+    };
+    max-cache-size 700m;
+    memstatistics-file "/tmp/bind.stats";
+    directory "/var/cache/bind";
+    auth-nxdomain no;
+    dnssec-validation yes;
+    dnssec-enable no;
+    recursion yes;
+    allow-recursion { "carlitos.devup"; };
+    allow-query { "carlitos.devup"; };
+    allow-query-cache { "carlitos.devup"; };
+};
+
+
+view "carlitos.devup" {
+    match-clients { "carlitos.devup"; };
+    zone "carlitos.devup" {
+        type master;
+        file "/etc/bind/db.carlitos.devup";
+    };
+};
