@@ -12,10 +12,11 @@ $ sudo docker-compose up
 ```
 
 https://github.com/sameersbn/docker-bind/blob/master/README.md
+
 This is basically sameershbn's image. 
 I just added some fake zone data for noobs like mua :stuck_out_tongue:
 
-Edit, replace or remove zone files from the shared volume located on this location
+Edit, replace or remove zone files from the shared volume located her:
 ```
 /srv/docker/bind/bind/etc/
 ```
