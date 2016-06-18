@@ -22,4 +22,5 @@ Edit, replace or remove zone files from the shared volume located here:
 ```
 
 You can also manage the zones via the web portal at https://server-address:10000
-Default credentials root/password. Read sameersbn's README for more settings etc.
+
+Default credentials root/password. sameersbn's README has more information on settings etc.
